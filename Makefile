@@ -6,6 +6,7 @@ include config.mk
 
 SRC = st.c x.c
 OBJ = $(SRC:.c=.o)
+PREFIX = ~/.local
 
 all: options st
 
@@ -30,7 +31,7 @@ st: $(OBJ)
 	$(CC) -o $@ $(OBJ) $(STLDFLAGS)
 
 clean:
-	rm -f st $(OBJ) st-$(VERSION).tar.gz
+	rm -f st $(OBJ) st-$(VERSION).tar.gz config.h
 
 dist: clean
 	mkdir -p st-$(VERSION)

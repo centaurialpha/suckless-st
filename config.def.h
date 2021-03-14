@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Hermit:pixelsize=18:antialias=true:autohint=true";
-static int borderpx = 2;
+static int borderpx = 0;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -96,24 +96,24 @@ unsigned int tabspaces = 8;
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
 	/* 8 normal colors */
-	"black",
-	"red3",
-	"green3",
-	"yellow3",
-	"blue2",
-	"magenta3",
-	"cyan3",
-	"gray90",
+	"#1e2127",
+	"#e06c75",
+	"#98c379",
+	"#d19a66",
+	"#61afef",
+	"#c678dd",
+	"#56b6c2",
+	"#828791",
 
 	/* 8 bright colors */
-	"gray50",
-	"red",
-	"green",
-	"yellow",
-	"#5c5cff",
-	"magenta",
-	"cyan",
-	"white",
+	"#5c6370",
+	"#e06c75",
+	"#98c379",
+	"#d19a66",
+	"#61afef",
+	"#c678dd",
+	"#56b6c2",
+	"#e6efff",
 
 	[255] = 0,
 
